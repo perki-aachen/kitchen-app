@@ -53,12 +53,14 @@ function App() {
         <table className="fixed">
           <colgroup>
             <col width="85%" />
-            <col width="15%" />
+            <col width="10%" />
+            <col width="5%" />
           </colgroup>
           <tbody>
             <tr>
               <th>Name</th>
               <th>Amount</th>
+              <th></th>
             </tr>
             {ingredients?.map((ingredient, index) => {
               return (

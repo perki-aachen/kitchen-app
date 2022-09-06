@@ -172,3 +172,7 @@ td {
     border-bottom: 0.15rem groove #ccc;
     text-align: left;
 }
+
+.delete-icon:hover {
+    cursor: pointer;
+}

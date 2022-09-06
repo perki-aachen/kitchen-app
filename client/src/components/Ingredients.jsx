@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlineDelete } from "react-icons/ai";
 
 function Ingredients(props) {
   const name = props.itemName.name;
@@ -6,13 +7,16 @@ function Ingredients(props) {
   const id = props.itemName._id;
 
   return (
-    <tr
-      onClick={() => {
-        return props.deleteItem(id);
-      }}
-    >
+    <tr>
       <td>{name}</td>
       <td>{amount}</td>
+      <td class="delete-icon">
+        <AiOutlineDelete
+          onClick={() => {
+            return props.deleteItem(id);
+          }}
+        />
+      </td>
     </tr>
   );
 }
